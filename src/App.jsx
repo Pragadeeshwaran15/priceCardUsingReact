@@ -4,7 +4,7 @@ import Card from './component/Card'
 function App() {
   let Data=[   
     {
-      title:"Free",
+      title:"FREE",
       
       price:"$0",
       isPrice:true,
@@ -26,7 +26,7 @@ function App() {
       isReports:false
     }
     ,{
-      title:"plus",
+      title:"PLUS",
       price:"$9",
       isPrice:true,
       user:"5 Users",
@@ -47,7 +47,7 @@ function App() {
       isReports:false
     }
     ,{
-      title:"Pro",
+      title:"PRO",
       price:"$49",
       isPrice:true,
       user:"Unlimited User",

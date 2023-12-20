@@ -8,13 +8,13 @@ function Card({cardData}) {
       <h6 className="card-price text-center">{cardData.price}<span className="period">/month</span></h6>
       <hr/>
       <ul className="fa-ul">
-        <li className={cardData.isUser?"":"text-muted"}><span className="fa-li"><i className={cardData.isUser?"fas fa-check":"fas fa-times"}></i></span>{cardData.user}</li>
+        <li className={cardData.isUser?"":"text-muted"}><span className="fa-li"><i className={cardData.isUser?"fas fa-check":"fas fa-times"}></i></span>{cardData.title!=="FREE"?<b>{cardData.user}</b>:cardData.user}</li>
         <li className={cardData.isStorage?"":"text-muted"}><span className="fa-li"><i className={cardData.isStorage?"fas fa-check":"fas fa-times"}></i></span>{cardData.storage}</li>
         <li className={cardData.isPublicProjects?"":"text-muted"}><span className="fa-li"><i className={cardData.isPublicProjects?"fas fa-check":"fas fa-times"}></i></span>{cardData.projectType}</li>
         <li className={cardData.isCommunityAccess?"":"text-muted"}><span className="fa-li"><i className={cardData.isCommunityAccess?"fas fa-check":"fas fa-times"}></i></span>{cardData.access}</li>
         <li className={cardData.isPrivateProjects?"":"text-muted"}><span className="fa-li"><i className={cardData.isPrivateProjects?"fas fa-check":"fas fa-times"}></i></span>{cardData.projectLimite}</li>
         <li className={cardData.isPhoneSupport?"":"text-muted"}><span className="fa-li"><i className={cardData.isPhoneSupport?"fas fa-check":"fas fa-times"}></i></span>{cardData.support}</li>
-        <li className={cardData.isSubDomain?"":"text-muted"}><span className="fa-li"><i className={cardData.isSubDomain?"fas fa-check":"fas fa-times"}></i></span>{cardData.Domain}</li>
+        <li className={cardData.isSubDomain?"":"text-muted"}><span className="fa-li"><i className={cardData.isSubDomain?"fas fa-check":"fas fa-times"}></i></span>{cardData.title==="PRO"?<><b>Unlimited</b> {cardData.Domain}</>:cardData.Domain}</li>
         <li className={cardData.isReports?"":"text-muted"}><span className="fa-li"><i className={cardData.isReports?"fas fa-check":"fas fa-times"}></i></span>{cardData.status}</li>
       </ul>
       <div className="d-grid">
@@ -26,3 +26,5 @@ function Card({cardData}) {
 }
 
 export default Card
+
+                                                                                                                     //{data.plan==="PRO"?<><b>Unlimited</b> {data.subDomain}</>:data.subDomain}
