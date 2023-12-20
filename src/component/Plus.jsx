@@ -12,9 +12,9 @@ function Plus(props) {
         <li><span class="fa-li"><i class="fas fa-check"></i></span>{props.cardData2.storage}</li>
         <li><span class="fa-li"><i class="fas fa-check"></i></span>{props.cardData2.projectType}</li>
         <li><span class="fa-li"><i class="fas fa-check"></i></span>{props.cardData2.access}</li>
-        <li class="text-muted"><span class="fa-li"><i class="fas fa-check"></i></span>{props.cardData2.projectLimite}</li>
-        <li class="text-muted"><span class="fa-li"><i class="fas fa-check"></i></span>{props.cardData2.support}</li>
-        <li class="text-muted"><span class="fa-li"><i class="fas fa-check"></i></span>{props.cardData2.Domain}</li>
+        <li><span class="fa-li"><i class="fas fa-check"></i></span>{props.cardData2.projectLimite}</li>
+        <li><span class="fa-li"><i class="fas fa-check"></i></span>{props.cardData2.support}</li>
+        <li><span class="fa-li"><i class="fas fa-check"></i></span>{props.cardData2.Domain}</li>
         <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>{props.cardData2.status}</li>
       </ul>
       <div class="d-grid">

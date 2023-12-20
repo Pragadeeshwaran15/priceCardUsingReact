@@ -12,10 +12,10 @@ function Pro(props) {
         <li><span class="fa-li"><i class="fas fa-check"></i></span>{props.cardData3.storage}</li>
         <li><span class="fa-li"><i class="fas fa-check"></i></span>{props.cardData3.projectType}</li>
         <li><span class="fa-li"><i class="fas fa-check"></i></span>{props.cardData3.access}</li>
-        <li class="text-muted"><span class="fa-li"><i class="fas fa-check"></i></span>{props.cardData3.projectLimite}</li>
-        <li class="text-muted"><span class="fa-li"><i class="fas fa-check"></i></span>{props.cardData3.support}</li>
-        <li class="text-muted"><span class="fa-li"><i class="fas fa-check"></i></span>{props.cardData3.Domain}</li>
-        <li class="text-muted"><span class="fa-li"><i class="fas fa-check"></i></span>{props.cardData3.status}</li>
+        <li ><span class="fa-li"><i class="fas fa-check"></i></span>{props.cardData3.projectLimite}</li>
+        <li ><span class="fa-li"><i class="fas fa-check"></i></span>{props.cardData3.support}</li>
+        <li><span class="fa-li"><i class="fas fa-check"></i></span>{props.cardData3.Domain}</li>
+        <li><span class="fa-li"><i class="fas fa-check"></i></span>{props.cardData3.status}</li>
       </ul>
       <div class="d-grid">
         <a href="#" class="btn btn-primary text-uppercase">Button</a>
