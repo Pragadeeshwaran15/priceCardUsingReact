@@ -1,45 +1,72 @@
 import React from 'react'
-import Free from './component/Free'
-import Plus from './component/Plus'
-import Pro from './component/Pro'
+import Card from './component/Card'
 
 function App() {
-  let freeData=   {
+  let Data=[   
+    {
       title:"Free",
-      price:["$0","/month"],
+      
+      price:"$0",
+      isPrice:true,
       user:"Single User",
+      isUser:true,
       storage:"5GB Storage",
+      isStorage:true,
       projectType:"Unlimited Public Projects",
+      isPublicProjects:true,
       access:"Community Access",
+      isCommunityAccess:true,
       projectLimite:"Unlimited Private Projects",
+      isPrivateProjects:false,
       support:"Dedicated Phone Support",
+      isPhoneSupport:false,
       Domain:"Free Subdomain",
-      status:"Monthly Status Reports"
+      isSubDomain:false,
+      status:"Monthly Status Reports",
+      isReports:false
     }
-    let plusData={
-      title:"Plus",
-      price:["$9","/month"],
+    ,{
+      title:"plus",
+      price:"$9",
+      isPrice:true,
       user:"5 Users",
+      isUser:true,
       storage:"50GB Storage",
+      isStorage:true,
       projectType:"Unlimited Public Projects",
+      isPublicProjects:true,
       access:"Community Access",
+      isCommunityAccess:true,
       projectLimite:"Unlimited Private Projects",
+      isPrivateProjects:true,
       support:"Dedicated Phone Support",
+      isPhoneSupport:true,
       Domain:"Free Subdomain",
-      status:"Monthly Status Reports"
+      isSubDomain:true,
+      status:"Monthly Status Reports",
+      isReports:false
     }
-    let prodata={
+    ,{
       title:"Pro",
-      price:["$49","/month"],
-      user:"Unlimited Users",
+      price:"$49",
+      isPrice:true,
+      user:"Unlimited User",
+      isUser:true,
       storage:"150GB Storage",
+      isStorage:true,
       projectType:"Unlimited Public Projects",
+      isPublicProjects:true,
       access:"Community Access",
+      isCommunityAccess:true,
       projectLimite:"Unlimited Private Projects",
+      isPrivateProjects:true,
       support:"Dedicated Phone Support",
-      Domain:["Unlimited","Free Subdomain"],
-      status:"Monthly Status Reports"
-    }
+      isPhoneSupport:true,
+      Domain:"Free Subdomain",
+      isSubDomain:true,
+      status:"Monthly Status Reports",
+      isReports:true
+    }]
 
   return <>
   {/* <!-- This snippet uses Font Awesome 5 Free as a dependency. You can download it at fontawesome.io! --> */}
@@ -48,14 +75,9 @@ function App() {
   <div className="container">
     <div className="row">
       {/* <!-- Free Tier --> */}
-       <Free cardData={freeData}/>
-        
-      
-      {/* <!-- Plus Tier --> */}
-      <Plus cardData2={plusData}/>
-      
-      {/* <!-- Pro Tier --> */}
-      <Pro cardData3={prodata}/>
+      {Data.map((e,i)=>{
+        return <Card cardData={e} key={i}/>  // here key is used to separate the each DOM
+      })}
     </div>
   </div>
 </section>
