@@ -44,9 +44,9 @@ function App() {
   return <>
   {/* <!-- This snippet uses Font Awesome 5 Free as a dependency. You can download it at fontawesome.io! --> */}
 
-<section class="pricing py-5">
-  <div class="container">
-    <div class="row">
+<section className="pricing py-5">
+  <div className="container">
+    <div className="row">
       {/* <!-- Free Tier --> */}
        <Free cardData={freeData}/>
         
